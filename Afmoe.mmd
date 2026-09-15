@@ -1,5 +1,16 @@
+```mermaid
 classDiagram
     direction TB
+
+    %% Base/Parent classes
+    class PreTrainedModel {
+    }
+
+    class GradientCheckpointingLayer {
+    }
+
+    class LlamaAttention {
+    }
 
     %% Inheritance
     PreTrainedModel <|-- AfmoePreTrainedModel
@@ -60,8 +71,11 @@ classDiagram
     }
 
     class AfmoeMLP
+
     class AfmoeExperts
+
     class AfmoeRMSNorm
+
     class AfmoeRotaryEmbedding
 
     %% Composition / usage arrows
@@ -79,3 +93,4 @@ classDiagram
     AfmoeSparseMoeBlock --> AfmoeTokenChoiceRouter : router
     AfmoeSparseMoeBlock --> AfmoeMLP : shared_experts
     AfmoeSparseMoeBlock --> AfmoeExperts : experts
+```
