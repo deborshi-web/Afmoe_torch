@@ -1,6 +1,6 @@
 # Afmoe_Tensorflow
 
-A Mixture-of-Experts (MoE) model is an AI architecture that splits a large neural network into smaller specialized sub-networks called experts, activating only the most relevant ones for each piece of data.
+AFMOE (Adaptive Feature Mixture-of-Experts) is a neural network architecture designed to improve model performance by dynamically selecting and combining specialized expert networks for different input features or patterns.
 
 
 
@@ -91,9 +91,7 @@ classDiagram
     AfmoeSparseMoeBlock --> AfmoeExperts : experts
 ```
 
-# How MoE Works
+Instead of sending every input through the same computational pathway, AFMOE uses a gating mechanism to determine which experts are most relevant to a particular input. The selected experts process the input, and their outputs are adaptively weighted and combined to produce the final prediction.
 
-***Experts***: 
 
-Independent sub-networks (usually feed-forward layers) that learn to handle different aspects of data, such as grammar, code, or math
 
