@@ -93,5 +93,7 @@ classDiagram
 
 # How MoE Works
 
-***Experts***: Independent sub-networks (usually feed-forward layers) that learn to handle different aspects of data, such as grammar, code, or math
+***Experts***: 
+
+Independent sub-networks (usually feed-forward layers) that learn to handle different aspects of data, such as grammar, code, or math
 
