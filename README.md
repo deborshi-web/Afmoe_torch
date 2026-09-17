@@ -99,3 +99,12 @@ A typical AFMOE pipeline can be represented as:
 Input → Feature Extraction → Adaptive Gating → Expert Networks → Weighted Feature Fusion → Output
 
 The main idea is to allow different experts to specialize in different characteristics of the data while the gating network learns when and how much each expert should contribute. This can provide greater flexibility than a conventional single-network architecture and can be useful for complex tasks involving diverse or heterogeneous patterns.
+
+
+**Key characteristics**:
+
+Adaptive routing: dynamically chooses relevant experts.
+Expert specialization: different experts can learn different feature representations.
+Feature fusion: combines expert outputs using learned weights.
+Scalability: additional experts can be introduced for more specialized representations.
+Potential efficiency: only a subset of experts may need to be activated for each input.
