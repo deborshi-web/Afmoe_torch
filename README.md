@@ -94,4 +94,8 @@ classDiagram
 Instead of sending every input through the same computational pathway, AFMOE uses a gating mechanism to determine which experts are most relevant to a particular input. The selected experts process the input, and their outputs are adaptively weighted and combined to produce the final prediction.
 
 
+A typical AFMOE pipeline can be represented as:
 
+Input → Feature Extraction → Adaptive Gating → Expert Networks → Weighted Feature Fusion → Output
+
+The main idea is to allow different experts to specialize in different characteristics of the data while the gating network learns when and how much each expert should contribute. This can provide greater flexibility than a conventional single-network architecture and can be useful for complex tasks involving diverse or heterogeneous patterns.
