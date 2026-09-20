@@ -103,11 +103,14 @@ The main idea is to allow different experts to specialize in different character
 
 **Key characteristics**:
 
-Adaptive routing: dynamically chooses relevant experts.
+**Adaptive routing**: dynamically chooses relevant experts.
 Expert specialization: different experts can learn different feature representations.
-Feature fusion: combines expert outputs using learned weights.
-Scalability: additional experts can be introduced for more specialized representations.
-Potential efficiency: only a subset of experts may need to be activated for each input.
+
+**Feature fusion**: combines expert outputs using learned weights.
+
+**Scalability**: additional experts can be introduced for more specialized representations.
+
+**Potential efficiency**: only a subset of experts may need to be activated for each input.
 
 
 AFMOE can be adapted to applications such as computer vision, natural-language processing, time-series analysis, multimodal learning, and other machine-learning problems where different inputs may benefit from different learned representations.
