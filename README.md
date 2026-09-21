@@ -1,4 +1,4 @@
-# Afmoe_Tensorflow
+# Afmoe
 
 AFMOE (Adaptive Feature Mixture-of-Experts) is a neural network architecture designed to improve model performance by dynamically selecting and combining specialized expert networks for different input features or patterns.
 
